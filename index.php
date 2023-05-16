@@ -19,26 +19,20 @@
                         <div class="secUser">
                             <div class="userHead"></div>
                             <div class="userBody"></div>
-                            <div class="userText">
-                                <div class="pass1"></div>
-                                <div class="pass2"></div>
-                                <div class="pass3"></div>
-                                <div class="pass4"></div>
-                            </div>
                         </div>
                     </div>
                     <div class="w-50 formulario">
                         <h1 class="fw-bold mb-4">Log in!</h1>
-                        <form class="" method="POST">
+                        <form action="./config/functions.php" method="POST">
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="example@gmail.com">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" name="pass" class="form-control" id="password" placeholder="****">
                             </div>
-                            <button type="submit" class="btn btn-warning py-2 w-100">Log in</button>
+                            <button type="submit" name="submitLogin" class="btn btn-warning py-2 w-100">Log in</button>
                         </form>
                     </div>
                 </div>
